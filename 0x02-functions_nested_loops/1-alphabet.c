@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * main - Prints "Alphabets in small letters" followed by a new line.
+ * main - Prints print_alphabet followed by a new line.
  *
  * Return: Always 0.
  */
-//print_alphabet
+
+/*print_alphabet*/
 void print_alphabet(void)
 {
 	char c = 'a';
@@ -15,4 +16,10 @@ void print_alphabet(void)
 		c++;
 	}
 	_putchar('\n');
+}
+
+int main(void)
+{
+	print_alphabet();
+	return (0);
 }
