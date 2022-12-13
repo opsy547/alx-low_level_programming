@@ -1,19 +1,19 @@
-#include "main.h"
-/**
- * main - Prints print_alphabet followed by a new line.
- *
- * Return: Always 0.
+/*
+ * File: 1-alphabet.c
+ * Auth: Opeyemi Odedoyin
  */
 
-/*print_alphabet*/
+#include "main.h"
+
+/**
+ * print_alphabet - prints the alphabet in lowercase, followed by a new line.
+ */
 void print_alphabet(void)
 {
-	char c = 'a';
+	char letter;
 
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-	}
+	for (letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
+
 	_putchar('\n');
 }
