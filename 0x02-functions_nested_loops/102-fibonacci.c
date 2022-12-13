@@ -1,6 +1,6 @@
 /*
  * File: 102-fibonacci.c
- * Auth: Opeyemi Odedoyin
+ * Auth: Brennan D Baraban
  */
 
 #include <stdio.h>
@@ -31,3 +31,4 @@ int main(void)
 	}
 
 	return (0);
+}
