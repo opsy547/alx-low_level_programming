@@ -1,6 +1,6 @@
 /*
  * File: 100-times_table.c
- * 
+ * Author:Opeyemi Odedoyin 
  */
 
 #include "main.h"
