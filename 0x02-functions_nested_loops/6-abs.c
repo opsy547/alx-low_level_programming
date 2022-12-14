@@ -1,6 +1,6 @@
 /*
  * File: 6-abs.c
- * Auth: Brennan D Baraban
+ * Authur: opeyemi
  */
 
 #include "main.h"

@@ -1,6 +1,6 @@
 /*
  * File: 9-times_table.c
- * Auth: Brennan D Baraban
+ * Auth: opeyemi
  */
 
 #include "main.h"
