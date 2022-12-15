@@ -3,13 +3,12 @@
  * Auth: Opeyemi Odedoyin
  */
 
-#include "main.h"
+#include "holberton.h"
 
 /**
  * print_numbers - Prints the numbers from 0-9.
  */
-
-void print_numbers(void);
+void print_numbers(void)
 {
 	int num;
 
