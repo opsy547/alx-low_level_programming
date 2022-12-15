@@ -1,4 +1,4 @@
-/**
+/*
  * File: 6-print_line.c
  * Auth: Opeyemi Odedoyin
  */
