@@ -7,8 +7,8 @@
 
 /**
  * main - Prints the numbers from 1-100, but "Fizz" is printed insted
- * 	  of number for multiples of three, for multiples of five,
- *        "Buzz", and for multiples of both three and five, "FizzBuzz".
+ * of number for multiples of three, for multiples of five,
+ * "Buzz", and for multiples of both three and five, "FizzBuzz".
  *
  * Return: Always 0.
  */
@@ -19,14 +19,13 @@ int main(void)
 	for (num = 1; num <= 100; num++)
 	{
 		if ((num % 3) == 0 && (num % 5) == 0)
-			printf("FizzBuzz");
+			printf("FizzBuzz")
 
 		else if ((num % 3) == 0)
 			printf("Fizz");
 
 		else if ((num % 5) == 0)
 			printf("Buzz");
-
 		else
 			printf("%d", num);
 
