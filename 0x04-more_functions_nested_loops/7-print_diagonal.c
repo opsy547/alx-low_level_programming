@@ -1,6 +1,6 @@
 /*
  * File: 7-print_diagonal.c
- * Auth: Opeyemi Odedoyin 
+ * Auth: Opeyemi Odedoyin
  */
 
 #include "main.h"
@@ -20,13 +20,10 @@ void print_diagonal(int n)
 			for (space = 0; space < len; space++)
 				_putchar(' ');
 			_putchar('\\');
-
 			if (len == n - 1)
 				continue;
-
 			_putchar('\n');
 		}
 	}
-
 	_putchar('\n');
 }
