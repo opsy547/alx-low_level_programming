@@ -1,4 +1,4 @@
-/**
+/*
  * File: 5-more_numbers.c
  * Auth: Opeyemi Odedoyin
  */
@@ -8,6 +8,7 @@
 /**
  * more_numbers - Print out the numbers 0-14 ten times.
  */
+
 void more_numbers(void)
 {
 	int num, count;
