@@ -1,5 +1,5 @@
 /*
- * File: 102-infinite_add.c
+ * File: 103-infinite_add.c
  * Auth: Opeyemi Odedoyin
  */
 
