@@ -7,20 +7,17 @@
 #include <stdio.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Nothing.
+ * _memset - fills memory with a constant byte.
+ * @s: memory area.
+ * @b: constant byte
+ * @n: bytes filled.
+ * Return: the pointer to dest
  */
-
-void *_memset(void *s, int c, size_t n);
+char *_memcpy(char *s, char b, unsigned int n);
 {
-	unsigned int index;
-	unsigned char *memory = s, value = c;
+	unsigned int i;
 
-	for (index = 0; index < n; index++)
-		memory[index] = value;
-
-	return (memory);
+	for (i = 0; i < n; i++)
+		*(s + i) = b;
+	return (s);
 }
