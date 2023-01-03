@@ -1,18 +1,18 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * _memset - fill a block of memory with a specific value
+ * @s : starting address of memory to be filled
+ * @b: the desired value
+ * @n : number of bytes to be changed
  *
- * Return: Nothing.
+ * Return: changed array with new value for n bytes
  */
 char *_memset(char *s, char b, unsigned int n);
 {
 	int i = 0;
 
-	for (; n > 0; i++
+	for (; n > 0; i++)
 	{
 		s[i] = b;
 		n--;
