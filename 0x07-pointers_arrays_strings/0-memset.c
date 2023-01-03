@@ -14,7 +14,7 @@
  * Return: Nothing.
  */
 
-void *_memset(void *s, int c, size_t n)
+char *_memset(char *s, int c, size_t n)
 {
 	unsigned int index;
 	unsigned char *memory = s, value = c;
