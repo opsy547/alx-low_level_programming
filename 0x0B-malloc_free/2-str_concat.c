@@ -1,52 +1,39 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-
 /**
- * str_concat - function that concatenates two strings.
- *              if NULL is passed, treat it as an empty string
- *              The function should return NULL on failure
- *
- * @s1: This is the output string
- * @s2: This is the input string
- *
- * Return: The returned pointer should point to a newly allocated space in
- *         memory which contains the contents of s1, followed by the contents 
- *         of s2, and null terminated
+ * _strdup - Main Entry
+ * @str: input
+ * Return: 0
  */
-
-char *str_concat(char *s1, char *s2)
+char *_strdup(char *str)
 {
-	int a, b;
-	char *s;
+	char *nstr;
+	unsigned int len, i;
 
-	if (s1 == NULL)
+	/* check is str is null */
+	if (str == NULL)
 	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
-	for (a = 0; s1[a] != '\0'; a++)
-	{
-	}
-	for (b = 0; s2[b] != '\0'; b++)
-	{
-	}
-
-	s = (char *)  malloc(((a + b) + 1) * sizeof(char));
-
-	if (s == NULL)
 		return (NULL);
-	for (a = 0; s1[a] != '\0'; a++)
-	{
-		s[a] = s1[a];
 	}
-	for (b = 0; s2[b] != '\0'; b++)
+
+	len = 0;
+	while (str[len] != '\0')
 	{
-		s[a] = s2[b];
-		a++;
+		len++;
 	}
-	return (s);
+
+	nstr = malloc(sizeof(char) * (len + 1));
+
+	/*check if malloc was successful*/
+	if (nstr == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; i < len; i++)
+	{
+		nstr[i] = str[i];
+	}
+	nstr[len] = '\0';
+	return (nstr);
 }
