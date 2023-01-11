@@ -1,23 +1,41 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
- * _strcat - Concat string, src appended to dest
- *
- * @dest: Destination string
- * @src: Source string
- * Return: Concat newString to dest
+ * argstostr - Main Entry
+ * @ac: input
+ * @av: input
+ * Return: 0
  */
-char *_strcat(char *dest, char *src)
+char *argstostr(int ac, char **av)
 {
-        int a, b;
+	int i, n, k = 0, len = 0;
+	char *str;
 
-        for (a = 0; dest[a] != '\0'; a++)
-                ;
-        for (b = 0; src[b] != '\0'; b++)
-        {
-                dest[a] = src[b];
-                a++;
-        }
-        return (dest);
+	if (ac == 0 || av == NULL)
+		return (NULL);
+
+	for (i = 0; i < ac; i++)
+	{
+		for (n = 0; av[i][n]; n++)
+			len++;
+	}
+	len += ac;
+
+	str = malloc(sizeof(char) * len + 1);
+	if (str == NULL)
+		return (NULL);
+
+	for (i = 0; i < ac; i++)
+	{
+		for (n = 0; av[i][n]; n++)
+		{
+			str[k] = av[i][n];
+			k++;
+		}
+		if (str[k] == '\0')
+		{
+			str[k++] = '\n';
+		}
+	}
+	return (str);
 }
-
