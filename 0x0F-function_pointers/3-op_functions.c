@@ -51,4 +51,6 @@ int op_div(int a, int b)
  * Return: modulus of two ints
  */
 int op_mod(int a, int b)
-
+{
+	return (a % b);
+}
